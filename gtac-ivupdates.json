@@ -1,0 +1,21 @@
+[
+    {
+        "UpdateStageName": "GTAC Server Download",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://gtaconnected.com/downloads/server/GTAC-Server-Linux-{{GTACVersion}}.tar.gz",
+        "UpdateSourceTarget": "{{$FullBaseDir}}",
+        "UnzipUpdateSource": true,
+        "OverwriteExistingFiles": true,
+        "DeleteAfterExtract": true,
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Prepare GTA IV Config",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"cd \\\"{{$FullBaseDir}}\\\" && chmod +x Server && { [ -f gtaiv.xml ] || sed 's|<game>gta:iii</game>|<game>gta:iv</game>|' server.xml > gtaiv.xml; }\"",
+        "SkipOnFailure": false
+    }
+]

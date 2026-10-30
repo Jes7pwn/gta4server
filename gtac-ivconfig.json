@@ -1,0 +1,31 @@
+[
+    {
+        "DisplayName": "Player Limit",
+        "Category": "GTA Connected:sports_esports",
+        "Subcategory": "Server:dns:1",
+        "Description": "Sets the maximum number of players that may connect to the server at one time. Overrides maxplayers in gtaiv.xml",
+        "Keywords": "maximum,players,limit,maxplayers",
+        "FieldName": "$MaxUsers",
+        "InputType": "number",
+        "MinValue": "1",
+        "ParamFieldName": "MaxUsers",
+        "DefaultValue": "32",
+        "Placeholder": "32",
+        "Suffix": "players",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "GTAC Server Version",
+        "Category": "Updates",
+        "Subcategory": "Runtime Configuration:build:3",
+        "Description": "Sets which GTA Connected server build to download when the server is updated. The latest build is listed at [gtaconnected.com/downloads](https://gtaconnected.com/downloads/)",
+        "Keywords": "gtac,version,build,update",
+        "FieldName": "GTACVersion",
+        "InputType": "text",
+        "ParamFieldName": "GTACVersion",
+        "DefaultValue": "1.7.3",
+        "Placeholder": "1.7.3",
+        "Required": true,
+        "EnumValues": {}
+    }
+]

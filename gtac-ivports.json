@@ -1,0 +1,9 @@
+[
+    {
+        "Protocol": "Both",
+        "Port": 22000,
+        "Ref": "GamePort",
+        "Name": "Game Port",
+        "Description": "Port for game traffic (UDP) and the built-in HTTP server (TCP)"
+    }
+]
